@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj1t7nwtk1o1t"]
+
+[ext_resource type="PackedScene" uid="uid://dr8yeju3tlss7" path="res://Assests/player.tscn" id="1_yq3qm"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_acble"]
+
+[node name="Test Map" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_yq3qm")]
+position = Vector2(3, -103)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -3)
+position_smoothing_enabled = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(4, 195)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_acble")

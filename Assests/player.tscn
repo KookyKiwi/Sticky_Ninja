@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://dr8yeju3tlss7"]
+
+[ext_resource type="Texture2D" uid="uid://c7smnapab2r6p" path="res://icon.svg" id="1_6oykv"]
+[ext_resource type="Script" path="res://Scripts/playerMovment.gd" id="1_onur4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6tijg"]
+atlas = ExtResource("1_6oykv")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1pjou"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6tijg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_va1rr"]
+size = Vector2(121, 119)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_onur4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1pjou")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_va1rr")
