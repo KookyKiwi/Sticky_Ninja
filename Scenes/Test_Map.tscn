@@ -5,16 +5,20 @@
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_acble"]
 
 [node name="Test Map" type="Node2D"]
+position = Vector2(-122, -43)
 
 [node name="Player" parent="." instance=ExtResource("1_yq3qm")]
-position = Vector2(3, -103)
+position = Vector2(10, -41)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0, -3)
+position = Vector2(-5, 13)
 position_smoothing_enabled = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(4, 195)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(9, -14)
 shape = SubResource("WorldBoundaryShape2D_acble")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
