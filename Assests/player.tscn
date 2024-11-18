@@ -1,47 +1,73 @@
-[gd_scene load_steps=30 format=4 uid="uid://dr8yeju3tlss7"]
+[gd_scene load_steps=34 format=3 uid="uid://dr8yeju3tlss7"]
 
 [ext_resource type="Script" path="res://Scripts/playerMovment.gd" id="1_onur4"]
-[ext_resource type="Texture2D" uid="uid://edbl4s6hc5ib" path="res://Assests/Idle__000.png" id="2_xgdqr"]
-[ext_resource type="Texture2D" uid="uid://xdcw6y5y5s62" path="res://ninjaadventurenew/png/Jump__000.png" id="3_0w8bf"]
-[ext_resource type="Texture2D" uid="uid://d18o167gbxssn" path="res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png" id="3_cucd5"]
-[ext_resource type="Texture2D" uid="uid://biy7meeeqsuoe" path="res://ninjaadventurenew/png/Jump__001.png" id="4_a4qft"]
-[ext_resource type="Texture2D" uid="uid://b5uvcnobknjtg" path="res://ninjaadventurenew/png/Jump__002.png" id="5_8sja6"]
-[ext_resource type="Texture2D" uid="uid://vi4uqiyhlksd" path="res://ninjaadventurenew/png/Jump__003.png" id="6_3mlyr"]
-[ext_resource type="Texture2D" uid="uid://g61rctyut3em" path="res://ninjaadventurenew/png/Jump__004.png" id="7_1m1lt"]
-[ext_resource type="Texture2D" uid="uid://hmvu1ck5ibjv" path="res://ninjaadventurenew/png/Jump__005.png" id="8_y7r3o"]
-[ext_resource type="Texture2D" uid="uid://dbga7rdc31hsx" path="res://ninjaadventurenew/png/Jump__006.png" id="9_je58e"]
-[ext_resource type="Texture2D" uid="uid://3fbv5uegnx8h" path="res://ninjaadventurenew/png/Jump__007.png" id="10_tlsmf"]
-[ext_resource type="Texture2D" uid="uid://cgleqk4k03eag" path="res://ninjaadventurenew/png/Jump__008.png" id="11_8lwlc"]
-[ext_resource type="Texture2D" uid="uid://d33xxokswgtsd" path="res://ninjaadventurenew/png/Jump__009.png" id="12_o6p2t"]
-[ext_resource type="Texture2D" uid="uid://chwdbf68y1bls" path="res://ninjaadventurenew/png/Run__000.png" id="13_5f750"]
-[ext_resource type="Texture2D" uid="uid://xaheu2q7tvud" path="res://ninjaadventurenew/png/Run__001.png" id="14_s1apu"]
-[ext_resource type="Texture2D" uid="uid://bycs4wssxha21" path="res://ninjaadventurenew/png/Run__002.png" id="15_adutr"]
-[ext_resource type="Texture2D" uid="uid://cweauf3tvk6hp" path="res://ninjaadventurenew/png/Run__003.png" id="16_hjflt"]
-[ext_resource type="Texture2D" uid="uid://xoevuxl47oyc" path="res://ninjaadventurenew/png/Run__004.png" id="17_86rkl"]
-[ext_resource type="Texture2D" uid="uid://cr7vhhec474tl" path="res://ninjaadventurenew/png/Run__005.png" id="18_4qbm1"]
-[ext_resource type="Texture2D" uid="uid://ekms5xf3fe0d" path="res://ninjaadventurenew/png/Run__006.png" id="19_ihohw"]
-[ext_resource type="Texture2D" uid="uid://duse7ftwnkg2f" path="res://ninjaadventurenew/png/Run__007.png" id="20_0ugnd"]
-[ext_resource type="Texture2D" uid="uid://b3evd7yeu7d3y" path="res://ninjaadventurenew/png/Run__008.png" id="21_iaxek"]
-[ext_resource type="Texture2D" uid="uid://y8aan3q2d8xq" path="res://ninjaadventurenew/png/Run__009.png" id="22_23eym"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_crvgi"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6tijg"]
-atlas = SubResource("CompressedTexture2D_crvgi")
-region = Rect2(0, 0, 128, 128)
+[ext_resource type="Texture2D" uid="uid://c1retwmvragx2" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__000.png" id="2_sdejq"]
+[ext_resource type="Texture2D" uid="uid://xdcw6y5y5s62" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__000.png" id="3_0w8bf"]
+[ext_resource type="Texture2D" uid="uid://taqau7ekr4c2" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__001.png" id="3_27dc2"]
+[ext_resource type="Texture2D" uid="uid://c455bakq42vip" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__002.png" id="4_6ulik"]
+[ext_resource type="Texture2D" uid="uid://biy7meeeqsuoe" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__001.png" id="4_a4qft"]
+[ext_resource type="Texture2D" uid="uid://b5uvcnobknjtg" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__002.png" id="5_8sja6"]
+[ext_resource type="Texture2D" uid="uid://b0wdcyr5cbtsw" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__003.png" id="5_t8gl4"]
+[ext_resource type="Texture2D" uid="uid://vi4uqiyhlksd" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__003.png" id="6_3mlyr"]
+[ext_resource type="Texture2D" uid="uid://b2ynqfxvhuefv" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__004.png" id="6_of4ma"]
+[ext_resource type="Texture2D" uid="uid://g61rctyut3em" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__004.png" id="7_1m1lt"]
+[ext_resource type="Texture2D" uid="uid://b4npg3b55cr1k" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__005.png" id="7_xqthe"]
+[ext_resource type="Texture2D" uid="uid://yelxhh1dih52" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__006.png" id="8_eag6n"]
+[ext_resource type="Texture2D" uid="uid://hmvu1ck5ibjv" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__005.png" id="8_y7r3o"]
+[ext_resource type="Texture2D" uid="uid://d2xe207gj7fqj" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__007.png" id="9_cngw0"]
+[ext_resource type="Texture2D" uid="uid://dbga7rdc31hsx" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__006.png" id="9_je58e"]
+[ext_resource type="Texture2D" uid="uid://bva5nw1hk0iq4" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__008.png" id="10_14hs6"]
+[ext_resource type="Texture2D" uid="uid://3fbv5uegnx8h" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__007.png" id="10_tlsmf"]
+[ext_resource type="Texture2D" uid="uid://br2dvw3joku44" path="res://Assests/Sprites/ninjaadventurenew/png/Idle__009.png" id="11_0gqjn"]
+[ext_resource type="Texture2D" uid="uid://cgleqk4k03eag" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__008.png" id="11_8lwlc"]
+[ext_resource type="Texture2D" uid="uid://d33xxokswgtsd" path="res://Assests/Sprites/ninjaadventurenew/png/Jump__009.png" id="12_o6p2t"]
+[ext_resource type="Texture2D" uid="uid://chwdbf68y1bls" path="res://Assests/Sprites/ninjaadventurenew/png/Run__000.png" id="13_5f750"]
+[ext_resource type="Texture2D" uid="uid://xaheu2q7tvud" path="res://Assests/Sprites/ninjaadventurenew/png/Run__001.png" id="14_s1apu"]
+[ext_resource type="Texture2D" uid="uid://bycs4wssxha21" path="res://Assests/Sprites/ninjaadventurenew/png/Run__002.png" id="15_adutr"]
+[ext_resource type="Texture2D" uid="uid://cweauf3tvk6hp" path="res://Assests/Sprites/ninjaadventurenew/png/Run__003.png" id="16_hjflt"]
+[ext_resource type="Texture2D" uid="uid://xoevuxl47oyc" path="res://Assests/Sprites/ninjaadventurenew/png/Run__004.png" id="17_86rkl"]
+[ext_resource type="Texture2D" uid="uid://cr7vhhec474tl" path="res://Assests/Sprites/ninjaadventurenew/png/Run__005.png" id="18_4qbm1"]
+[ext_resource type="Texture2D" uid="uid://ekms5xf3fe0d" path="res://Assests/Sprites/ninjaadventurenew/png/Run__006.png" id="19_ihohw"]
+[ext_resource type="Texture2D" uid="uid://duse7ftwnkg2f" path="res://Assests/Sprites/ninjaadventurenew/png/Run__007.png" id="20_0ugnd"]
+[ext_resource type="Texture2D" uid="uid://b3evd7yeu7d3y" path="res://Assests/Sprites/ninjaadventurenew/png/Run__008.png" id="21_iaxek"]
+[ext_resource type="Texture2D" uid="uid://y8aan3q2d8xq" path="res://Assests/Sprites/ninjaadventurenew/png/Run__009.png" id="22_23eym"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1pjou"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_xgdqr")
+"texture": ExtResource("2_sdejq")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6tijg")
+"texture": ExtResource("3_27dc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6ulik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_t8gl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_of4ma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xqthe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_eag6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cngw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_14hs6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0gqjn")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 13.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -76,7 +102,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 11.0
+"speed": 13.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -115,34 +141,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_va1rr"]
-size = Vector2(121, 168.5)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iy1og"]
-texture = ExtResource("3_cucd5")
-texture_region_size = Vector2i(64, 64)
-0:0/0 = 0
-1:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_k433p"]
-tile_size = Vector2i(64, 64)
-sources/0 = SubResource("TileSetAtlasSource_iy1og")
+size = Vector2(216, 243.859)
 
 [node name="Player" type="CharacterBody2D"]
+scale = Vector2(0.063, 0.063)
 script = ExtResource("1_onur4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -2)
-scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_1pjou")
-animation = &"jump"
-frame_progress = 0.576702
+animation = &"idle"
+frame_progress = 0.960695
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 22.75)
+position = Vector2(6, 4)
+scale = Vector2(1, -1.756)
 shape = SubResource("RectangleShape2D_va1rr")
-
-[node name="Platform" type="Node" parent="."]
-
-[node name="TileMapLayer" type="TileMapLayer" parent="Platform"]
-tile_map_data = PackedByteArray("AAD8/wIAAAABAAAAAAD9/wIAAAABAAAAAAD+/wIAAAABAAAAAAD//wIAAAABAAAAAAAAAAIAAAABAAAAAAABAAIAAAABAAAAAAACAAIAAAABAAAAAAADAAIAAAABAAAAAAAEAAIAAAABAAAAAAAFAAIAAAABAAAAAAAGAAIAAAABAAAAAAAIAAEAAAABAAAAAAAIAAIAAAABAAAAAAAJAAEAAAABAAAAAAAJAAIAAAABAAAAAAAKAAEAAAABAAAAAAAKAAIAAAABAAAAAAALAAEAAAABAAAAAAALAAIAAAABAAAAAAAMAAEAAAABAAAAAAAMAAIAAAABAAAAAAANAAEAAAABAAAAAAANAAIAAAABAAAAAAAOAAEAAAABAAAAAAAOAAIAAAABAAAAAAAPAAEAAAABAAAAAAAPAAIAAAABAAAAAAAQAAEAAAABAAAAAAAQAAIAAAABAAAAAAARAAEAAAABAAAAAAARAAIAAAABAAAAAAAVAAMAAAABAAAAAAAVAAQAAAABAAAAAAAVAAUAAAABAAAAAAAWAAMAAAABAAAAAAAWAAQAAAABAAAAAAAWAAUAAAABAAAAAAAXAAMAAAABAAAAAAAXAAQAAAABAAAAAAAXAAUAAAABAAAAAAAYAAMAAAABAAAAAAAYAAQAAAABAAAAAAAYAAUAAAABAAAAAAAZAAMAAAABAAAAAAAZAAQAAAABAAAAAAAZAAUAAAABAAAAAAAaAAMAAAABAAAAAAAaAAQAAAABAAAAAAAaAAUAAAABAAAAAAAgAP//AAABAAAAAAAgAAAAAAABAAAAAAAgAAEAAAABAAAAAAAhAP//AAABAAAAAAAhAAAAAAABAAAAAAAhAAEAAAABAAAAAAAiAP//AAABAAAAAAAiAAAAAAABAAAAAAAiAAEAAAABAAAAAAAjAP//AAABAAAAAAAjAAAAAAABAAAAAAAjAAEAAAABAAAAAAAkAP//AAABAAAAAAAkAAAAAAABAAAAAAAkAAEAAAABAAAAAAAlAP//AAABAAAAAAAlAAAAAAABAAAAAAAlAAEAAAABAAAAAAAmAP//AAABAAAAAAAmAAAAAAABAAAAAAAmAAEAAAABAAAAAAAnAP//AAABAAAAAAAnAAAAAAABAAAAAAAnAAEAAAABAAAAAAAcAAEAAAABAAAAAAAcAAIAAAABAAAAAAAdAAEAAAABAAAAAAAdAAIAAAABAAAAAAAeAAAAAAABAAAAAAAfAAAAAAABAAAAAAAjAP3/AAABAAAAAAAjAP7/AAABAAAAAAAkAP3/AAABAAAAAAAkAP7/AAABAAAAAAAfAPz/AAABAAAAAAAgAPz/AAABAAAAAAAPAPv/AAABAAAAAAAQAPv/AAABAAAAAAARAPv/AAABAAAAAAASAPv/AAABAAAAAAATAPv/AAABAAAAAAAUAPv/AAABAAAAAAAVAPv/AAABAAAAAAAWAPv/AAABAAAAAAAXAPv/AAABAAAAAAAYAPv/AAABAAAAAAAZAPv/AAABAAAAAAAaAPv/AAABAAAAAAAbAPv/AAABAAAAAAAcAPv/AAABAAAAAAAdAPv/AAABAAAAAAA=")
-tile_set = SubResource("TileSet_k433p")
