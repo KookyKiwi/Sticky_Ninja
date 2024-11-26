@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://l22ikvqri5yp"]
+[gd_scene load_steps=18 format=3 uid="uid://l22ikvqri5yp"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_amqdv"]
 [ext_resource type="Texture2D" uid="uid://civ2hhn3tkg3g" path="res://Assests/Sprites/BackGrounds/4.png" id="2_dlrq1"]
@@ -7,6 +7,53 @@
 [ext_resource type="Texture2D" uid="uid://c74lha77bacq2" path="res://Assests/Sprites/BackGrounds/3.png" id="5_i8psg"]
 [ext_resource type="Texture2D" uid="uid://1acp1wq03olg" path="res://Assests/Sprites/BackGrounds/bamboo_forest_objects1.png" id="6_mjt5j"]
 [ext_resource type="Texture2D" uid="uid://chwdbf68y1bls" path="res://Assests/Sprites/ninjaadventurenew/png/Run__000.png" id="7_cimwp"]
+[ext_resource type="Texture2D" uid="uid://xaheu2q7tvud" path="res://Assests/Sprites/ninjaadventurenew/png/Run__001.png" id="8_q23gq"]
+[ext_resource type="Texture2D" uid="uid://bycs4wssxha21" path="res://Assests/Sprites/ninjaadventurenew/png/Run__002.png" id="9_h6oyd"]
+[ext_resource type="Texture2D" uid="uid://cweauf3tvk6hp" path="res://Assests/Sprites/ninjaadventurenew/png/Run__003.png" id="10_vb220"]
+[ext_resource type="Texture2D" uid="uid://xoevuxl47oyc" path="res://Assests/Sprites/ninjaadventurenew/png/Run__004.png" id="11_5cuhm"]
+[ext_resource type="Texture2D" uid="uid://cr7vhhec474tl" path="res://Assests/Sprites/ninjaadventurenew/png/Run__005.png" id="12_n8lh0"]
+[ext_resource type="Texture2D" uid="uid://ekms5xf3fe0d" path="res://Assests/Sprites/ninjaadventurenew/png/Run__006.png" id="13_pmjof"]
+[ext_resource type="Texture2D" uid="uid://duse7ftwnkg2f" path="res://Assests/Sprites/ninjaadventurenew/png/Run__007.png" id="14_lo4jx"]
+[ext_resource type="Texture2D" uid="uid://b3evd7yeu7d3y" path="res://Assests/Sprites/ninjaadventurenew/png/Run__008.png" id="15_5pu6l"]
+[ext_resource type="Texture2D" uid="uid://y8aan3q2d8xq" path="res://Assests/Sprites/ninjaadventurenew/png/Run__009.png" id="16_ly2me"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7whsg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_cimwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_q23gq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_h6oyd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vb220")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_5cuhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_n8lh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pmjof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lo4jx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5pu6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ly2me")
+}],
+"loop": true,
+"name": &"run",
+"speed": 13.0
+}]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -14,8 +61,8 @@ anchor_right = 0.41
 anchor_bottom = 0.421
 offset_left = 3.0
 offset_top = 4.0
-offset_right = -0.320038
-offset_bottom = 0.191986
+offset_right = 810.68
+offset_bottom = 451.192
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_amqdv")
@@ -95,10 +142,12 @@ repeat_size = Vector2(1180, 0)
 autoscroll = Vector2(200, 0)
 repeat_times = 100
 
-[node name="Sprite2D" type="Sprite2D" parent="Ninja"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ninja"]
+texture_filter = 2
 position = Vector2(50, 580)
-scale = Vector2(0.282369, 0.283843)
-texture = ExtResource("7_cimwp")
+scale = Vector2(0.282, 0.282)
+sprite_frames = SubResource("SpriteFrames_7whsg")
+animation = &"run"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]

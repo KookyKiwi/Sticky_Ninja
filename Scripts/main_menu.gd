@@ -1,5 +1,10 @@
 extends Control
 
+@onready var animated_sprite: AnimatedSprite2D = $Ninja/AnimatedSprite2D
+
+func _process(_delta):
+	animated_sprite.play("run")
+
 func _on_play_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Test_Map.tscn")
 
