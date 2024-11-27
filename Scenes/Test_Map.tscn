@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=4 uid="uid://bj1t7nwtk1o1t"]
 
-[ext_resource type="PackedScene" uid="uid://dr8yeju3tlss7" path="res://Assests/player.tscn" id="1_yq3qm"]
+[ext_resource type="PackedScene" uid="uid://dr8yeju3tlss7" path="res://Scenes/player.tscn" id="1_yq3qm"]
 [ext_resource type="Texture2D" uid="uid://d18o167gbxssn" path="res://Assests/Sprites/Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png" id="2_4rqj0"]
 [ext_resource type="PackedScene" uid="uid://dii3x33eqsdu8" path="res://Scenes/pause_menu.tscn" id="3_cmvgl"]
 
