@@ -144,10 +144,12 @@ animations = [{
 size = Vector2(216, 243.859)
 
 [node name="Player" type="CharacterBody2D"]
+texture_filter = 2
 scale = Vector2(0.063, 0.063)
 script = ExtResource("1_onur4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 2
 position = Vector2(-1, -2)
 sprite_frames = SubResource("SpriteFrames_1pjou")
 animation = &"idle"
