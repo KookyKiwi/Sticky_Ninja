@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://l22ikvqri5yp"]
+[gd_scene load_steps=19 format=3 uid="uid://l22ikvqri5yp"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_amqdv"]
 [ext_resource type="Texture2D" uid="uid://civ2hhn3tkg3g" path="res://Assests/Sprites/BackGrounds/4.png" id="2_dlrq1"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c74lha77bacq2" path="res://Assests/Sprites/BackGrounds/3.png" id="5_i8psg"]
 [ext_resource type="Texture2D" uid="uid://1acp1wq03olg" path="res://Assests/Sprites/BackGrounds/bamboo_forest_objects1.png" id="6_mjt5j"]
 [ext_resource type="Texture2D" uid="uid://chwdbf68y1bls" path="res://Assests/Sprites/ninjaadventurenew/png/Run__000.png" id="7_cimwp"]
+[ext_resource type="Texture2D" uid="uid://dtcv3dedffcdu" path="res://Assests/Title.png" id="7_kqraq"]
 [ext_resource type="Texture2D" uid="uid://xaheu2q7tvud" path="res://Assests/Sprites/ninjaadventurenew/png/Run__001.png" id="8_q23gq"]
 [ext_resource type="Texture2D" uid="uid://bycs4wssxha21" path="res://Assests/Sprites/ninjaadventurenew/png/Run__002.png" id="9_h6oyd"]
 [ext_resource type="Texture2D" uid="uid://cweauf3tvk6hp" path="res://Assests/Sprites/ninjaadventurenew/png/Run__003.png" id="10_vb220"]
@@ -96,8 +97,8 @@ autoscroll = Vector2(1000, 0)
 repeat_times = 100
 
 [node name="Sprite2D" type="Sprite2D" parent="Green"]
-position = Vector2(570.5, 318)
-scale = Vector2(3.59688, 3.58889)
+position = Vector2(571.5, 319.5)
+scale = Vector2(3.59063, 3.60556)
 texture = ExtResource("2_dlrq1")
 
 [node name="Black_Bamboo" type="Parallax2D" parent="."]
@@ -106,8 +107,8 @@ autoscroll = Vector2(400, 0)
 repeat_times = 100
 
 [node name="Sprite2D" type="Sprite2D" parent="Black_Bamboo"]
-position = Vector2(580.5, 391.5)
-scale = Vector2(3.62812, 4.38333)
+position = Vector2(580.5, 393)
+scale = Vector2(3.62812, 4.4)
 texture = ExtResource("3_80j2i")
 
 [node name="Green_Bamboo" type="Parallax2D" parent="."]
@@ -116,8 +117,8 @@ autoscroll = Vector2(350, 0)
 repeat_times = 100
 
 [node name="Sprite2D" type="Sprite2D" parent="Green_Bamboo"]
-position = Vector2(574.5, 392)
-scale = Vector2(3.61562, 4.38889)
+position = Vector2(574.5, 396)
+scale = Vector2(3.61562, 4.43333)
 texture = ExtResource("4_2uw8p")
 
 [node name="Greener_Bamboo" type="Parallax2D" parent="."]
@@ -126,16 +127,20 @@ autoscroll = Vector2(300, 0)
 repeat_times = 100
 
 [node name="Sprite2D" type="Sprite2D" parent="Greener_Bamboo"]
-position = Vector2(581, 400.5)
-scale = Vector2(3.6625, 4.50556)
+position = Vector2(581, 401.5)
+scale = Vector2(3.6625, 4.51667)
 texture = ExtResource("5_i8psg")
 
 [node name="Temple" type="Parallax2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Temple"]
-position = Vector2(557.5, 439)
+position = Vector2(559, 444)
 scale = Vector2(6.45745, 7.03371)
 texture = ExtResource("6_mjt5j")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(559, 110)
+texture = ExtResource("7_kqraq")
 
 [node name="Ninja" type="Parallax2D" parent="."]
 repeat_size = Vector2(1180, 0)
@@ -144,10 +149,12 @@ repeat_times = 100
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ninja"]
 texture_filter = 2
-position = Vector2(50, 580)
+position = Vector2(50, 582)
 scale = Vector2(0.282, 0.282)
 sprite_frames = SubResource("SpriteFrames_7whsg")
 animation = &"run"
+frame = 4
+frame_progress = 0.760993
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
