@@ -160,10 +160,10 @@ zoom = Vector2(5, 5)
 [node name="PauseMenu" type="CanvasLayer" parent="Player"]
 
 [node name="Pause Menu" parent="Player/PauseMenu" instance=ExtResource("3_cmvgl")]
-offset_left = -1.0
-offset_top = -1.0
-offset_right = -1.0
-offset_bottom = -1.0
+offset_left = -34.0
+offset_top = -31.0
+offset_right = -34.0
+offset_bottom = -31.0
 
 [node name="Platform" type="Node" parent="."]
 

@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
@@ -13,7 +12,16 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-
+		
+		
+	if is_on_wall():
+		velocity = Vector2.ZERO
+		if Input.is_action_just_pressed("mouse_right"):
+			var mouse_direction = get_global_mouse_position() - global_position
+			if mouse_direction != Vector2.ZERO:
+				mouse_direction = mouse_direction.normalized()
+				mouse_direction.x = mouse_direction.x * 6
+				velocity = mouse_direction * 400
 	
 	var direction := Input.get_axis("left", "right")
 	
